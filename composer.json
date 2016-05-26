@@ -23,6 +23,7 @@
     "yiisoft/yii2": "2.*",
     "nox-it/yii2-nox": "1.*",
     "nox-it/yii2-nox-mvc": "1.*",
+    "nox-it/yii2-nox-helpers": "1.*",
     "nox-it/yii2-nox-user-agent-parser": "1.*",
     "snowplow/referer-parser": "dev-master"
   },
