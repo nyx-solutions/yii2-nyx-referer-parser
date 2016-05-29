@@ -10,7 +10,7 @@
     "php"
   ],
   "license": "Apache-2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -25,7 +25,7 @@
     "nox-it/yii2-nox-mvc": "1.*",
     "nox-it/yii2-nox-helpers": "1.*",
     "nox-it/yii2-nox-user-agent-parser": "1.*",
-    "snowplow/referer-parser": "dev-master"
+    "snowplow/referer-parser": "0.*"
   },
   "autoload": {
     "psr-4": {
