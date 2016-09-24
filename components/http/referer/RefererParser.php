@@ -117,6 +117,15 @@
 
             $referrer = \Yii::$app->request->referrer;
 
+            if (!empty($referrer)) {
+                $referrerHost = parse_url($referrer);
+                $currentHost  = parse_url(\Yii::$app->request->hostInfo);
+
+                if (is_array($referrerHost) && is_array($currentHost) && isset($referrerHost['host'], $currentHost['host']) && $referrerHost['host'] == $currentHost['host']) {
+                    $referrer = null;
+                }
+            }
+
             if (!$this->isGoogleOrganic() && !$this->isGoogleCampaign() && !$this->isGoogleAds() && !$this->isExternalSearch() && !empty($referrer)) {
                 return true;
             }
