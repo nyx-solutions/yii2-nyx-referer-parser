@@ -9,8 +9,8 @@
     "framework",
     "php"
   ],
-  "license": "Apache-2.0",
-  "version": "1.0.3",
+  "license": "BSD-3-Clause",
+  "version": "1.0.4",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -37,7 +37,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://bitbucket.org/noxit-plugins/yii2-nox-referer-parser"
+      "url": "https://github.com/nox-it/yii2-nox-referer-parser"
     }
   ]
 }
