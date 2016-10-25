@@ -83,11 +83,9 @@
         {
             $this->isReady();
 
-            $source   = \Yii::$app->request->get('utm_source', '');
-            $medium   = \Yii::$app->request->get('utm_medium', '');
-            $campaign = \Yii::$app->request->get('utm_campaign', '');
+            $source = \Yii::$app->request->get('utm_source', '');
 
-            if (!empty($source) && !empty($medium) && !empty($campaign)) {
+            if (!empty($source)) {
                 return true;
             }
 
