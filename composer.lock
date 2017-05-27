@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b69530815a78f00189ab3a01e4fae6b",
-    "content-hash": "ba5474b4e5acf1ae077fb04f464f37c8",
+    "content-hash": "72e9996a2c2a0be06c324cc88f361e4e",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -40,16 +39,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.2.7",
+            "version": "3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/Inputmask.git",
-                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38"
+                "reference": "e42852f4afa01a80815394a5b2f9ce504c1a8d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/5a72c563b502b8e05958a524cdfffafe9987be38",
-                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38",
+                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/e42852f4afa01a80815394a5b2f9ce504c1a8d0b",
+                "reference": "e42852f4afa01a80815394a5b2f9ce504c1a8d0b",
                 "shasum": ""
             },
             "require": {
@@ -58,23 +57,36 @@
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "./dist/inputmask/inputmask.js"
+                    "./dist/inputmask/inputmask.js",
+                    "./dist/inputmask/inputmask.extensions.js",
+                    "./dist/inputmask/inputmask.date.extensions.js",
+                    "./dist/inputmask/inputmask.numeric.extensions.js",
+                    "./dist/inputmask/inputmask.phone.extensions.js",
+                    "./dist/inputmask/jquery.inputmask.js",
+                    "./dist/inputmask/global/document.js",
+                    "./dist/inputmask/global/window.js",
+                    "./dist/inputmask/phone-codes/phone.js",
+                    "./dist/inputmask/phone-codes/phone-be.js",
+                    "./dist/inputmask/phone-codes/phone-nl.js",
+                    "./dist/inputmask/phone-codes/phone-ru.js",
+                    "./dist/inputmask/phone-codes/phone-uk.js",
+                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jqlite.js",
+                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jquery.js",
+                    "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.js",
+                    "./dist/inputmask/bindings/inputmask.binding.js"
                 ],
                 "bower-asset-ignore": [
                     "**/*",
                     "!dist/*",
                     "!dist/inputmask/*",
                     "!dist/min/*",
-                    "!dist/min/inputmask/*",
-                    "!extra/bindings/*",
-                    "!extra/dependencyLibs/*",
-                    "!extra/phone-codes/*"
+                    "!dist/min/inputmask/*"
                 ]
             },
             "license": [
                 "http://opensource.org/licenses/mit-license.php"
             ],
-            "description": "jquery.inputmask is a jquery plugin which create an input mask.",
+            "description": "Inputmask is a javascript library which creates an input mask.  Inputmask can run against vanilla javascript, jQuery and jqlite.",
             "keywords": [
                 "form",
                 "input",
@@ -204,20 +216,20 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2016-09-14 20:40:20"
+            "time": "2016-09-14T20:40:20+00:00"
         },
         {
             "name": "donatj/phpuseragentparser",
-            "version": "v0.5.2",
+            "version": "v0.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/donatj/PhpUserAgent.git",
-                "reference": "d8e7b6a0c83a6e4aa9098360a99c6eeb763c004a"
+                "reference": "936f092e819bda25fcac120566f64139ff726432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/d8e7b6a0c83a6e4aa9098360a99c6eeb763c004a",
-                "reference": "d8e7b6a0c83a6e4aa9098360a99c6eeb763c004a",
+                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/936f092e819bda25fcac120566f64139ff726432",
+                "reference": "936f092e819bda25fcac120566f64139ff726432",
                 "shasum": ""
             },
             "require": {
@@ -255,24 +267,27 @@
                 "user agent",
                 "useragent"
             ],
-            "time": "2016-09-01 22:33:01"
+            "time": "2016-12-16T04:43:16+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.8.0",
+            "version": "v4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
+                "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
-                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4",
+                "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -299,20 +314,20 @@
             "keywords": [
                 "html"
             ],
-            "time": "2016-07-16 12:58:58"
+            "time": "2017-03-13T06:30:53+00:00"
         },
         {
             "name": "nox-it/yii2-nox",
-            "version": "1.0.6",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox.git",
-                "reference": "5a632d345f3b94969ef1083314fbb10eb0f62d5c"
+                "url": "https://github.com/nox-it/yii2-nox.git",
+                "reference": "70ed65c83e5955ad25a5c4df4917fc52b25ccd7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox/get/5a632d345f3b94969ef1083314fbb10eb0f62d5c.zip",
-                "reference": "5a632d345f3b94969ef1083314fbb10eb0f62d5c",
+                "url": "https://api.github.com/repos/nox-it/yii2-nox/zipball/70ed65c83e5955ad25a5c4df4917fc52b25ccd7d",
+                "reference": "70ed65c83e5955ad25a5c4df4917fc52b25ccd7d",
                 "shasum": ""
             },
             "require": {
@@ -322,12 +337,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "nox\\": ""
+                    "nox\\": "base"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -342,20 +357,20 @@
                 "php",
                 "yii2"
             ],
-            "time": "2016-06-10 15:38:58"
+            "time": "2017-05-27T12:45:41+00:00"
         },
         {
             "name": "nox-it/yii2-nox-helpers",
-            "version": "1.1.4",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jsas-development/yii2-nox-helpers.git",
-                "reference": "9518426755ed15de347e1da319e1c95219196150"
+                "url": "https://github.com/nox-it/yii2-nox-helpers.git",
+                "reference": "ab253c708b82f9d1fa873a1f381f26533be3ccc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsas-development/yii2-nox-helpers/zipball/9518426755ed15de347e1da319e1c95219196150",
-                "reference": "9518426755ed15de347e1da319e1c95219196150",
+                "url": "https://api.github.com/repos/nox-it/yii2-nox-helpers/zipball/ab253c708b82f9d1fa873a1f381f26533be3ccc8",
+                "reference": "ab253c708b82f9d1fa873a1f381f26533be3ccc8",
                 "shasum": ""
             },
             "require": {
@@ -386,20 +401,20 @@
                 "php",
                 "yii2"
             ],
-            "time": "2016-10-14 00:07:19"
+            "time": "2017-05-27T14:19:33+00:00"
         },
         {
             "name": "nox-it/yii2-nox-mvc",
-            "version": "1.0.8",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox-mvc.git",
-                "reference": "b8c47c446dbef07a6bfa16ef8fe9bc456dd01b41"
+                "url": "https://github.com/nox-it/yii2-nox-mvc.git",
+                "reference": "2390c09da3c84c0e498aab95de21c8e218d35e7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox-mvc/get/b8c47c446dbef07a6bfa16ef8fe9bc456dd01b41.zip",
-                "reference": "b8c47c446dbef07a6bfa16ef8fe9bc456dd01b41",
+                "url": "https://api.github.com/repos/nox-it/yii2-nox-mvc/zipball/2390c09da3c84c0e498aab95de21c8e218d35e7b",
+                "reference": "2390c09da3c84c0e498aab95de21c8e218d35e7b",
                 "shasum": ""
             },
             "require": {
@@ -414,7 +429,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -430,20 +445,20 @@
                 "php",
                 "yii2"
             ],
-            "time": "2016-07-13 13:52:39"
+            "time": "2017-05-27T14:56:51+00:00"
         },
         {
             "name": "nox-it/yii2-nox-user-agent-parser",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox-user-agent-parser.git",
-                "reference": "7a7198bc50d1dbc62b3a4e89e2beb1a3fb41e845"
+                "url": "https://github.com/nox-it/yii2-nox-user-agent-parser.git",
+                "reference": "a72a085695f949758b6df7754df55b96b194766c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/noxit-plugins/yii2-nox-user-agent-parser/get/7a7198bc50d1dbc62b3a4e89e2beb1a3fb41e845.zip",
-                "reference": "7a7198bc50d1dbc62b3a4e89e2beb1a3fb41e845",
+                "url": "https://api.github.com/repos/nox-it/yii2-nox-user-agent-parser/zipball/a72a085695f949758b6df7754df55b96b194766c",
+                "reference": "a72a085695f949758b6df7754df55b96b194766c",
                 "shasum": ""
             },
             "require": {
@@ -460,7 +475,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -476,7 +491,7 @@
                 "php",
                 "yii2"
             ],
-            "time": "2016-05-30 14:34:55"
+            "time": "2016-10-15T13:01:51+00:00"
         },
         {
             "name": "snowplow/referer-parser",
@@ -516,25 +531,25 @@
                 }
             ],
             "description": "Snowplow Refer(r)er parser for PHP",
-            "time": "2016-01-29 16:43:00"
+            "time": "2016-01-29T16:43:00+00:00"
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.9",
+            "version": "2.0.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
+                "reference": "ee996adec1dfd7babb67bd0c604f5bd6425fe5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2b75151ea60e1fd820046416eee2e89c3dda1133",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ee996adec1dfd7babb67bd0c604f5bd6425fe5ab",
+                "reference": "ee996adec1dfd7babb67bd0c604f5bd6425fe5ab",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
-                "bower-asset/jquery.inputmask": "~3.2.2",
+                "bower-asset/jquery.inputmask": "~3.2.2 | ~3.3.3",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
@@ -602,6 +617,12 @@
                     "name": "Dmitry Naumenko",
                     "email": "d.naumenko.a@gmail.com",
                     "role": "Core framework development"
+                },
+                {
+                    "name": "Boudewijn Vahrmeijer",
+                    "email": "info@dynasource.eu",
+                    "homepage": "http://dynasource.eu",
+                    "role": "Core framework development"
                 }
             ],
             "description": "Yii PHP Framework Version 2",
@@ -610,24 +631,27 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-07-11 13:36:42"
+            "time": "2017-02-08T09:04:32+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464"
+                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7452fd908a5023b8bb5ea1b123a174ca080de464",
-                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
+                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -657,7 +681,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-02-06 00:49:24"
+            "time": "2016-12-20T13:26:02+00:00"
         }
     ],
     "packages-dev": [],
