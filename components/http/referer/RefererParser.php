@@ -1,11 +1,16 @@
 <?php
 
+    /**
+     * @noinspection PhpMissingFieldTypeInspection
+     */
+
     namespace nox\components\http\referer;
 
     use nox\components\http\userAgent\UserAgentParser;
     use nox\helpers\StringHelper;
     use Snowplow\RefererParser\Parser;
     use Snowplow\RefererParser\Referer;
+    use Yii;
 
     /**
      * Class RefererParser
@@ -40,7 +45,7 @@
         public function isReady()
         {
             if (!(bool)$this->ready) {
-                $this->parsedUrl = $this->parse(\Yii::$app->request->referrer, \Yii::$app->request->url);
+                $this->parsedUrl = $this->parse(Yii::$app->request->referrer, Yii::$app->request->url);
             }
         }
         #endregion
@@ -67,7 +72,7 @@
         {
             $this->isReady();
 
-            $gclid = \Yii::$app->request->get('gclid', '');
+            $gclid = Yii::$app->request->get('gclid', '');
 
             if (!empty($gclid)) {
                 return true;
@@ -83,7 +88,7 @@
         {
             $this->isReady();
 
-            $source = \Yii::$app->request->get('utm_source', '');
+            $source = Yii::$app->request->get('utm_source', '');
 
             if (!empty($source)) {
                 return true;
@@ -113,11 +118,11 @@
         {
             $this->isReady();
 
-            $referrer = \Yii::$app->request->referrer;
+            $referrer = Yii::$app->request->referrer;
 
             if (!empty($referrer)) {
                 $referrerHost = parse_url($referrer);
-                $currentHost  = parse_url(\Yii::$app->request->hostInfo);
+                $currentHost  = parse_url(Yii::$app->request->hostInfo);
 
                 if (is_array($referrerHost) && is_array($currentHost) && isset($referrerHost['host'], $currentHost['host']) && $referrerHost['host'] == $currentHost['host']) {
                     $referrer = null;
@@ -177,7 +182,7 @@
             } elseif ($this->isGoogleAds()) {
                 return 'google-cpc';
             } elseif ($this->isGoogleCampaign()) {
-                return (string)\Yii::$app->request->get('utm_source', '');
+                return (string)Yii::$app->request->get('utm_source', '');
             } elseif ($this->isExternalSearch()) {
                 return 'busca-orgânica-externa';
             } elseif ($this->isExternalUnknownSource()) {
@@ -201,7 +206,7 @@
             } elseif ($this->isExternalSearch()) {
                 return $this->parsedUrl->getMedium().': '.$this->parsedUrl->getSource();
             } elseif ($this->isExternalUnknownSource()) {
-                $sourceUrl = parse_url(\Yii::$app->request->referrer);
+                $sourceUrl = parse_url(Yii::$app->request->referrer);
                 $sourceUrl = $sourceUrl['scheme'].'://'.$sourceUrl['host'];
 
                 return 'Site Externo: '.$sourceUrl;
@@ -216,7 +221,7 @@
         public function getMedium()
         {
             if ($this->isGoogleCampaign()) {
-                return (string)\Yii::$app->request->get('utm_medium', '');
+                return (string)Yii::$app->request->get('utm_medium', '');
             }
 
             return null;
@@ -228,7 +233,7 @@
         public function getTerm()
         {
             if ($this->isGoogleCampaign()) {
-                return (string)\Yii::$app->request->get('utm_term', '');
+                return (string)Yii::$app->request->get('utm_term', '');
             }
 
             return null;
@@ -240,7 +245,7 @@
         public function getContent()
         {
             if ($this->isGoogleCampaign()) {
-                return (string)\Yii::$app->request->get('utm_content', '');
+                return (string)Yii::$app->request->get('utm_content', '');
             }
 
             return null;
@@ -252,7 +257,7 @@
         public function getCampaign()
         {
             if ($this->isGoogleCampaign()) {
-                return (string)\Yii::$app->request->get('utm_campaign', '');
+                return (string)Yii::$app->request->get('utm_campaign', '');
             }
 
             return null;

@@ -2,13 +2,7 @@
   "name": "nox-it/yii2-nox-referer-parser",
   "description": "Yii2 Referer Parser",
   "type": "library",
-  "keywords": [
-    "yii2",
-    "extension",
-    "migration",
-    "framework",
-    "php"
-  ],
+  "keywords": ["yii2", "extension", "migration", "framework", "php"],
   "license": "BSD-3-Clause",
   "version": "1.0.6",
   "authors": [
@@ -19,12 +13,12 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0",
-    "nox-it/yii2-nox": "1.*",
-    "nox-it/yii2-nox-mvc": "1.*",
-    "nox-it/yii2-nox-helpers": "1.*",
-    "nox-it/yii2-nox-user-agent-parser": "1.*",
-    "snowplow/referer-parser": "0.*"
+    "php": ">=7.4.0",
+    "nox-it/yii2-nox": "~2.0.0",
+    "nox-it/yii2-nox-mvc": "~2.0.0",
+    "nox-it/yii2-nox-helpers": "~2.0.0",
+    "nox-it/yii2-nox-user-agent-parser": "~2.0.0",
+    "snowplow/referer-parser": "~0.2.0"
   },
   "autoload": {
     "psr-4": {
@@ -35,6 +29,10 @@
     "process-timeout": 1800
   },
   "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
     {
       "type": "vcs",
       "url": "https://github.com/nox-it/yii2-nox-referer-parser"
