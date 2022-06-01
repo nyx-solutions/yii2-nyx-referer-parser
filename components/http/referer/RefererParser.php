@@ -4,10 +4,10 @@
      * @noinspection PhpMissingFieldTypeInspection
      */
 
-    namespace nox\components\http\referer;
+    namespace nyx\components\http\referer;
 
-    use nox\components\http\userAgent\UserAgentParser;
-    use nox\helpers\StringHelper;
+    use nyx\components\http\userAgent\UserAgentParser;
+    use nyx\helpers\StringHelper;
     use Snowplow\RefererParser\Parser;
     use Snowplow\RefererParser\Referer;
     use Yii;
@@ -15,7 +15,7 @@
     /**
      * Class RefererParser
      *
-     * @package nox\components\http\referer
+     * @package nyx\components\http\referer
      */
     class RefererParser extends Parser
     {
