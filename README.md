@@ -1,7 +1,7 @@
-Yii PHP Framework Version 2 / NOX Referer Parser
+Yii PHP Framework Version 2 / NYX Referer Parser
 ================================================
 
-NOX Referer Parser is a PHP library for extracting marketing attribution data (such as search terms) from referer URLs.
+NYX Referer Parser is a PHP library for extracting marketing attribution data (such as search terms) from referer URLs.
 
 [![Latest Stable Version](https://poser.pugx.org/nyx-solutions/yii2-nyx-referer-parser/v/stable)](https://packagist.org/packages/nyx-solutions/yii2-nyx-referer-parser)
 [![Total Downloads](https://poser.pugx.org/nyx-solutions/yii2-nyx-referer-parser/downloads)](https://packagist.org/packages/nyx-solutions/yii2-nyx-referer-parser)
