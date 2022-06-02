@@ -2,7 +2,7 @@
   "name": "nyx-solutions/yii2-nyx-referer-parser",
   "description": "Yii2 Referer Parser",
   "type": "library",
-  "keywords": ["yii2", "extension", "migration", "framework", "php"],
+  "keywords": ["yii2", "extension", "framework", "php"],
   "license": "BSD-3-Clause",
   "version": "5.0.1",
   "authors": [
